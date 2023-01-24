@@ -1,0 +1,59 @@
+header {
+
+    background-image: url(https://cdn.pixabay.com/photo/2017/08/15/14/51/sea-stack-2644224__340.jpg);
+    background-size: cover;
+    background-position: right;
+    height: 300px;
+    color: #f8f8f8;
+}
+
+h1 {
+    font-family: Tahoma;
+    text-align: center;
+}
+
+nav {
+    background-color: rgba(2, 48, 71, 0.5);
+    width: 380px;
+    font-size: 18px;
+    line-height: 1.8;
+    font-style: italic;
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    color: #f8f8f8;
+    font-family: verdana;
+}
+
+h2 {
+    text-align: center;
+    font-family: Tahoma;
+    font-size: 30px;
+    color: #023047;
+
+}
+
+h3 {
+    color: #023047;
+}
+
+p>span>a {
+    text-decoration: none;
+    color: #023047;
+}
+
+main {
+    font-family: verdana;
+}
+
+ol {
+    font-weight: bold;
+}
+
+/* colors: 
+ljusblå #8ECAE6
+mellanblå #219EBC
+mörkblå #023047   rgb(2, 48, 71)
+gul #FFB703
+orange #FB8500 */
