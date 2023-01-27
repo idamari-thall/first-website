@@ -1,14 +1,17 @@
 header {
-
     background-image: url(https://cdn.pixabay.com/photo/2017/08/15/14/51/sea-stack-2644224__340.jpg);
     background-size: cover;
     background-position: right;
     height: 300px;
-    color: #f8f8f8;
+}
+
+header,
+header a {
+    font-family: Tahoma;
+    color: #fff;
 }
 
 h1 {
-    font-family: Tahoma;
     text-align: center;
 }
 
@@ -20,10 +23,19 @@ nav {
     font-style: italic;
 }
 
-nav>ul>li>a {
+/* nav>ul>li>a kan ersättas med nav a som är en descendant selector */
+nav a {
     text-decoration: none;
-    color: #f8f8f8;
-    font-family: verdana;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.image {
+    width: 350px;
+    height: 240px;
+    margin: 10px 0 0 10px;
 }
 
 h2 {
@@ -31,16 +43,24 @@ h2 {
     font-family: Tahoma;
     font-size: 30px;
     color: #023047;
-
 }
 
 h3 {
     color: #023047;
 }
 
+.turer::first-letter {
+    font-size: 30px;
+}
+
+
 p>span>a {
     text-decoration: none;
     color: #023047;
+}
+
+p a:hover {
+    color: #fb9017;
 }
 
 main {
@@ -51,9 +71,78 @@ ol {
     font-weight: bold;
 }
 
+
+
 /* colors: 
-ljusblå #8ECAE6
-mellanblå #219EBC
+ljusblå #cceaf6
+8cd0ec
+4cb6e1
+1e85ae
+166281
 mörkblå #023047   rgb(2, 48, 71)
 gul #FFB703
-orange #FB8500 */
+#fd9e02
+orange #FB8500
+dovare orange #fb9017 
+mörkorange #bb3e03
+vinröd #ae2012
+*/
+
+/* IMAGE OVERLAY FADE - LÄGG IN BILDER PÅ GOTLAND OCH TEXT MED VAR DE ÄR IFRÅN OCH FAKTA OM PLATSEN. 
+ELLER TVÄRTOM??? MAN HAR FAKTA OM EN PLATS OCH GENOM ATT HOVER SÅ KOMMER MAN DIT?!!
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #04AA6D;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+</style>
+</head>
+<body>
+
+<h2>Opacity with Box</h2>
+<p>Hover over the image to see the effect.</p>
+
+<div class="container">
+  <img src="img_avatar.png" alt="Avatar" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text">John Doe</div>
+  </div>
+</div>
+  
+</body>
+</html> */
