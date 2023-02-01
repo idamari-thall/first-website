@@ -1,74 +1,95 @@
 header {
-    background-image: url(https://cdn.pixabay.com/photo/2017/08/15/14/51/sea-stack-2644224__340.jpg);
-    background-size: cover;
-    background-position: right;
-    height: 300px;
+  background-image: url(https://cdn.pixabay.com/photo/2017/08/15/14/51/sea-stack-2644224__340.jpg);
+  background-size: cover;
+  background-position: right;
+  height: 300px;
 }
 
 header,
 header a {
-    font-family: Tahoma;
-    color: #fff;
+  font-family: Tahoma;
+  color: #fff;
 }
 
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
 nav {
-    background-color: rgba(2, 48, 71, 0.5);
-    width: 380px;
-    font-size: 18px;
-    line-height: 1.8;
-    font-style: italic;
+  background-color: rgba(2, 48, 71, 0.5);
+  width: 380px;
+  font-size: 18px;
+  line-height: 1.8;
+  font-style: italic;
 }
 
 /* nav>ul>li>a kan ersättas med nav a som är en descendant selector */
 nav a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 nav a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
+}
+
+.images div {
+  display: inline-block;
+  border: #166281 solid 3px;
+  margin: 10px 0 10px 10px;
 }
 
 .image {
-    width: 350px;
-    height: 240px;
-    margin: 10px 0 0 10px;
+  width: 350px;
+  height: 240px;
 }
 
 h2 {
-    text-align: center;
-    font-family: Tahoma;
-    font-size: 30px;
-    color: #023047;
+  text-align: center;
+  font-family: Tahoma;
+  font-size: 30px;
+  color: #023047;
 }
 
 h3 {
-    color: #023047;
+  color: #023047;
 }
 
 .turer::first-letter {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 
 p>span>a {
-    text-decoration: none;
-    color: #023047;
+  text-decoration: none;
+  color: #023047;
 }
 
 p a:hover {
-    color: #fb9017;
+  color: #fb9017;
 }
 
 main {
-    font-family: verdana;
+  font-family: verdana;
 }
 
 ol {
-    font-weight: bold;
+  font-weight: bold;
+}
+
+.square {
+  width: 50%;
+  border: #023047 solid 5px;
+  background-color: #fb9017;
+}
+
+.square::after {
+  border: 5px solid red;
+
+  text-align: center;
+
+  width: 50vw;
+
+  height: 50vw;
 }
 
 
@@ -91,6 +112,9 @@ vinröd #ae2012
 /* IMAGE OVERLAY FADE - LÄGG IN BILDER PÅ GOTLAND OCH TEXT MED VAR DE ÄR IFRÅN OCH FAKTA OM PLATSEN. 
 ELLER TVÄRTOM??? MAN HAR FAKTA OM EN PLATS OCH GENOM ATT HOVER SÅ KOMMER MAN DIT?!!
 
+1https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity
+
+CSS
 .container {
   position: relative;
   width: 50%;
@@ -130,10 +154,8 @@ ELLER TVÄRTOM??? MAN HAR FAKTA OM EN PLATS OCH GENOM ATT HOVER SÅ KOMMER MAN D
   font-size: 16px;
   padding: 16px 32px;
 }
-</style>
-</head>
-<body>
 
+HTML
 <h2>Opacity with Box</h2>
 <p>Hover over the image to see the effect.</p>
 
@@ -144,5 +166,47 @@ ELLER TVÄRTOM??? MAN HAR FAKTA OM EN PLATS OCH GENOM ATT HOVER SÅ KOMMER MAN D
   </div>
 </div>
   
+</body>
+</html> */
+
+
+/* 
+FÖR ATT FÅ OLIKA INNEHÅLL SYNLIGT
+https://www.w3schools.com/cssref/tryit.php?filename=trycss3_target_tab
+
+CSS
+.tab div {
+  display: none;
+}
+
+.tab div:target {
+  display: block;
+}
+
+
+HTML
+<div class="tab">
+
+<a href="#link1">Link 1</a>   
+<a href="#link2">Link 2</a>
+<a href="#link3">Link 3</a>
+
+<div id="link1">
+  <h3>Content to Link 1</h3>
+  <p>Hello World!</p>
+</div>
+
+<div id="link2">
+  <h3>Content to Link 2</h3>
+  <h4>Great success!</h4>
+</div>
+
+<div id="link3">
+  <h3>Content to Link 3</h3>
+  <p>Yeah!</p>
+</div>
+
+</div>
+
 </body>
 </html> */
